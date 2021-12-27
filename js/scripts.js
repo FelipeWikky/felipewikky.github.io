@@ -32,3 +32,19 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+function showSectionByUrl(name) {
+    if (name) {
+        const sections = document.querySelectorAll('section');
+        if (sections && sections.length > 0) {
+            sections.forEach(section => {
+                if (section.id == name) {
+                    section.classList.remove('display-none');
+                } else {
+                    section.classList.add('display-none');
+                }
+            });
+        }
+
+    }
+}

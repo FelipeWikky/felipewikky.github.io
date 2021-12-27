@@ -1,0 +1,73 @@
+div#topNav {
+    position: absolute;
+    left: 0;
+    display: flex;
+    width: 100%;
+    background-color: rgba(189, 93, 56);
+    box-shadow: 0px 0px 1px 0px rgba(7, 55, 99, 1);
+    height: 50px;
+}
+div#topNav .nav-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+div#topNav .nav-top img {
+    margin-top: 5px !important;
+    margin-left: 15px !important;
+}
+div#topNav .nav-top ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+div#topNav li {
+    list-style-type: none;
+    padding-top: 10px;
+}
+div#topNav li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.14rem;
+}
+div#topNav li a:hover {
+    color: rgba(255, 255, 255, 1);
+    font-weight: bold;
+}
+
+main.content {
+    position: relative;
+    left: 0;
+    top: 0;
+}
+#about,
+#experience,
+#education,
+#skills,
+#projects {
+    position: absolute !important;
+    margin-top: 50px;
+}
+
+section.resume-section {
+    min-height: auto;
+}
+
+.display-none {
+    display: none !important;
+    opacity: 0;
+}
+
+nav#sideNav {
+    display: none;
+}
+@media (max-width: 991.98px) {
+    nav#sideNav {
+        display: flex;
+    }
+    div#topNav {
+        display: none;
+    }
+}
